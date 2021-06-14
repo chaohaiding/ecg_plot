@@ -8,7 +8,7 @@ from math import ceil
 
 
 def _ax_plot(ax, x, y, secs=10, lwidth=0.5, amplitude_ecg = 1.8, time_ticks =0.2):
-    ax.set_xticks(np.arange(0,11,time_ticks))    
+    ax.set_xticks(np.arange(0,secs+1,time_ticks))    
     ax.set_yticks(np.arange(-ceil(amplitude_ecg),ceil(amplitude_ecg),1.0))
 
     #ax.set_yticklabels([])
